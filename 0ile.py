@@ -181,7 +181,7 @@ for P in file.readlines():
     try:
         tok = (response.json()['data']['tokenizeCreditCard']['token'])
     except TypeError:
-        print('Call Modca')	
+        print('Call Modca To Update Habibi 💸 ')	
         sys.exit()  
 			
     cookies = {
