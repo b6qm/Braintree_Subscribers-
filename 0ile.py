@@ -533,5 +533,5 @@ for P in file.readlines():
         
 
     else:
-    	print(response.json())
+    	print('Fuck Me')
     time.sleep(25)
