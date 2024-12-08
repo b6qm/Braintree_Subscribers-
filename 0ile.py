@@ -551,5 +551,5 @@ for P in file.readlines():
         
 
     else:
-    	print('{X} New RespoNsE ✨ ')
+    	print(response.json())
     time.sleep(25)
