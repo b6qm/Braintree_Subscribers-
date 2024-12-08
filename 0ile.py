@@ -246,7 +246,7 @@ for P in file.readlines():
         cookies=cookies,
         headers=headers,
         json=json_data,
-    )
+    ).text
         
 # Note: json_data will not be serialized by requests
 # exactly as it was in the original request.
