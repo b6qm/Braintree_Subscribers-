@@ -533,5 +533,5 @@ for P in file.readlines():
         
 
     else:
-    	print('Fuck Me')
+    	print('')
     time.sleep(25)
