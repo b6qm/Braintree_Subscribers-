@@ -180,8 +180,7 @@ for P in file.readlines():
     except TypeError:
         print('Call Modca To Update Habibi 💸 ')	
         sys.exit()  
-			
-    cookies = {
+		
     cookies = {
         'visid_incap_2624039': '/fudJLClQs259Q/frigJRaf9JWcAAAAAQUIPAAAAAACwGwdp3k0cPOgqg6iEYAFh',
         'osVisitor': '1875de0b-9cfb-4cfe-bd66-744771ee42be',
