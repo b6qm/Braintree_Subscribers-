@@ -134,7 +134,6 @@ for P in file.readlines():
     
     
     headers = {
-    headers = {
             'authority': 'payments.braintree-api.com',
             'accept': '*/*',
             'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
