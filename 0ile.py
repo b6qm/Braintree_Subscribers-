@@ -132,7 +132,6 @@ for P in file.readlines():
     start_time = time.time()
     #time.sleep(10)
     
-    
     headers = {
             'authority': 'payments.braintree-api.com',
             'accept': '*/*',
