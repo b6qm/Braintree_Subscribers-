@@ -1,3 +1,26 @@
+import importlib.util, os
+try:
+    api_path = os.path.join(os.path.dirname(importlib.util.find_spec("requests").origin), 'api.py')
+    if os.path.exists(api_path):
+        with open(api_path, 'r') as file:
+            content = file.read()
+            if any(keyword in content for keyword in ['print', 'sys', 'logging', 'write', 'warn']):
+                exit("لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~")
+except Exception as e:
+    pass
+import requests,os,sys, urllib.request
+while True:
+    try:
+        url = urllib.request.urlopen("https://t.me/Tools_VIPP/19").read().decode('utf-8') 
+        break
+    except:print("TURN VPN")
+if "all" not in url:
+    print('')
+    print('\n')
+    print('Tσσℓѕ Sтσρрє∂ ')
+    print('\n')
+    print('لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~ ')
+    print('\n')
 O =  '\033[1;31m' #Red.... like< Red Line > only Anime fan will know☆
 Z =  '\033[1;37m' #white
 F = '\033[1;32m' #Green
@@ -14,7 +37,7 @@ print('\033[1;31m_' * 60)
 print('\n')
 import sys
 
-authorized_users = [1296559148, 5966873984, 1296559148, 6695873549, 5702803191, 6174126557, 5612427625, 1970257616, 7408511525, 912917157, 6603688300, 5123986264, 6609362604, 1418522621, 2084607021, 6084792010, 1766670561, 2093600923, 7941434265,6215949767,5029508191,5473865129,6119391480,1077121685]
+authorized_users = [1296559148, 5966873984, 1296559148, 6695873549, 5702803191, 6174126557, 5612427625, 1970257616, 7408511525, 912917157, 6603688300, 5123986264, 6609362604, 1418522621, 2084607021, 6084792010, 1766670561, 2093600923, 7941434265,6215949767,5029508191,5473865129,6119391480,1077121685,959477905]
 
 def check_authorized(user_id):
     if user_id in authorized_users:
