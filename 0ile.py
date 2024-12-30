@@ -156,11 +156,13 @@ for P in file.readlines():
     #time.sleep(10)
     
     
+    
+    
     headers = {
         'authority': 'payments.braintree-api.com',
         'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
-        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzUzODYyNzAsImp0aSI6ImRlYTY0OTFiLTMwYzgtNDZmMC04ZTZkLTllMDViNzFkYmE5NyIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319.clZkQNBUp-influ9O_YSkb20dSZ8zlkKkuY6Ik9Dg9BgP2RCGxJZrP8NaDNla-cb5QIzWhBLJxn-l0ZA3gUZxw',
+        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzU2NTg3NTIsImp0aSI6ImQ1ODE2NjJhLTFmNGUtNDljYi1iMjM4LWQ3MTY4MDdkYmUxZSIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319.vnxvIIMnOrScRL5B6E3fq62AQtgaaS870PYVA-Uwz7T1F-If13XXboQji5yTVwTGQZiqbZ56q9YI7jsRaJ09fg',
         'braintree-version': '2018-05-10',
         'content-type': 'application/json',
         'origin': 'https://assets.braintreegateway.com',
@@ -178,7 +180,7 @@ for P in file.readlines():
         'clientSdkMetadata': {
             'source': 'client',
             'integration': 'custom',
-            'sessionId': '83cd99f4-5a97-4efe-a109-84e04240bb7f',
+            'sessionId': 'c98ab89a-e87b-438e-883c-0a5046ea0b82',
         },
         'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
         'variables': {
