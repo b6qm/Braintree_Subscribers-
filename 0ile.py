@@ -157,11 +157,13 @@ for P in file.readlines():
     
     
     
+    
+    
     headers = {
         'authority': 'payments.braintree-api.com',
         'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
-        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzU4NTY2NjUsImp0aSI6Ijc1ZmQzOWMyLTIyOGUtNDlmMS1iOTFkLTg0YjBkZjNmMjU5ZCIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319.jFnz5BsKvdjlgPeThRxwzrMjKj4R9Ke2Mm4Kx98-4GG4tcm08IHvUSzRjU5D3aAKUXpl_8EaRL0CkDjqh7ggDQ',
+        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzYxMDMxMTEsImp0aSI6Ijg1MGFlMWRhLWFlNGItNGNlZC04YjE4LWQ4M2JjZTEyNzc2MiIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319._5pYKjgz45L8FTrTJ-JZjHDKZe6rWcRtCvrP3juJ6v-U40B_HfeSxsf0NNks5bZHlAJN4yx_05VplRu6_AiPzA',
         'braintree-version': '2018-05-10',
         'content-type': 'application/json',
         'origin': 'https://assets.braintreegateway.com',
@@ -179,7 +181,7 @@ for P in file.readlines():
         'clientSdkMetadata': {
             'source': 'client',
             'integration': 'custom',
-            'sessionId': '0abc94da-f92f-44c7-a073-cc81711db882',
+            'sessionId': '3f3e168e-5ad6-4728-9ff6-f1c899b786ff',
         },
         'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
         'variables': {
@@ -199,6 +201,10 @@ for P in file.readlines():
     }
     
     response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
+    
+
+
+	
     try:
         tok = (response.json()['data']['tokenizeCreditCard']['token'])
     except TypeError:
